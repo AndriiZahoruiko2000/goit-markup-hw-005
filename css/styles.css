@@ -621,7 +621,6 @@ ul {
   /* margin-top: 30px;
   margin-left: 30px; */
   /* margin: 15px; */
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-project-box {
@@ -633,6 +632,7 @@ ul {
 .portfolio-project-link {
   display: block;
   outline: none;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio-project-link:hover,
@@ -658,11 +658,12 @@ ul {
   letter-spacing: 0.03em;
   padding: 63px 24px;
   height: 100%;
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-project-item:hover .portfolio-cover-text {
+.portfolio-project-link:hover .portfolio-cover-text,
+.portfolio-project-link:focus .portfolio-cover-text {
   transform: translateY(0%);
 }
 
